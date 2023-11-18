@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practice 10</title>
+</head>
+<body>
+    <table id="calculator">
+        <tr>
+            <td colspan="5">
+                <input type="text" id="inputNum">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="num7" value="7" onclick="input('7')">
+            </td>
+            <td>
+                <input type="button" id="num8" value="8" onclick="input('8')">
+            </td>
+            <td>
+                <input type="button" id="num9" value="9" onclick="input('9')">
+            </td>
+            <td>
+                <input type="button" id="divide" value="/" onclick="input('/')">
+            </td>
+            <td>
+                <input type="button" id="clear" value="C" onclick="clearinput()">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button" id="num4" value="4" onclick="input('4')">
+            </td>
+            <td>
+                <input type="button" id="num5" value="5" onclick="input('5')">
+            </td>
+            <td>
+                <input type="button" id="num6" value="6" onclick="input('6')">
+            </td>
+            <td>
+                <input type="button" id="multiply" value="*" onclick="input('*')">
+            </td>
+            <td>
+                <input type="button" id="delete" value="&lt;-" onclick="del(this)">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button" id="num1" value="1" onclick="input('1')">
+            </td>
+            <td>
+                <input type="button" id="num2" value="2" onclick="input('2')">
+            </td>
+            <td>
+                <input type="button" id="num3" value="3" onclick="input('3')">
+            </td>
+            <td>
+                <input type="button" id="min" value="-" onclick="input('-')">
+            </td>
+            <td rowspan="2">
+                <input type="button" id="result" value="=" onclick="solvecalc(this)">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="button" id="num0" value="0" onclick="input('0')">
+            </td>
+            <td>
+                <input type="button" id="coma" value="." onclick="input('.')">
+            </td>
+            <td>
+                <input type="button" id="plus" value="+" onclick="input('+')">
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="console.js"></script>
+</body>
+</html>
